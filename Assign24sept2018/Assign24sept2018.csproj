@@ -189,6 +189,7 @@
     <Content Include="Content\tea.jpg" />
     <Content Include="Content\towel.jpg" />
     <Content Include="Default.aspx" />
+    <Content Include="DeleteSheet.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -232,6 +233,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="SingleProductDetails.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="UpdateSheet.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -368,11 +370,19 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DeleteSheet.aspx.cs">
+      <DependentUpon>DeleteSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteSheet.aspx.designer.cs">
+      <DependentUpon>DeleteSheet.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="model\ProductModel.cs" />
+    <Compile Include="model\SqlProcess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\ProductRepository.cs" />
     <Compile Include="SingleProductDetails.aspx.cs">
@@ -397,6 +407,13 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="UpdateSheet.aspx.cs">
+      <DependentUpon>UpdateSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateSheet.aspx.designer.cs">
+      <DependentUpon>UpdateSheet.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
