@@ -45,7 +45,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <a class="navbar-brand" runat="server" href="~/">IJOX_APP</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -67,13 +67,13 @@
                             {
                                 if (Context.User.IsInRole("Products"))
                                 {%>
-                                       <li><a runat="server" href="~/About">Product</a></li>                                      
+                                       <li><a runat="server" href="~/About">Products</a></li>                                      
                                     <%}
                                     else
                                     {
-                                        if (Context.User.IsInRole("Order"))
+                                        if (Context.User.IsInRole("Management"))
                                         {%> 
-                                               <li><a runat="server" href="~/Contact">Order</a></li>
+                                               <li><a runat="server" href="~/Contact">Product Management</a></li>
                                          <%}
                                             else
                                            {%> <%}%>

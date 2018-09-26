@@ -3,9 +3,9 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+        <h1>IJOX</h1>
+        <p class="lead"> This is a shopping site. this site gives you the proper products to as to save your money</p>
+        <p><a href="http://localhost:52186/About" class="btn btn-primary btn-lg">for details search here &raquo;</a></p>
     </div>
 
     <div class="row">

@@ -2,8 +2,21 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <p>
         
-        <img src="Content/cart.jpg" />
-       this web takes you to the comfort zone so as to increase the saving;
+        &nbsp;</p>
+    <p>
+        
+        <asp:Image ID="Image1" runat="server" />
+
+    </p>
+    <p>
+        
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+
+    </p>
+    <p>
+        
+        &nbsp;this web takes you to the comfort zone so as to increase the saving;
         <br />
 
     </p>
