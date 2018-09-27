@@ -7,10 +7,12 @@ namespace Assign24sept2018.Repository
 {
     public class ProductRepository
     {
-        public int PrdID;
+        public int prdID;
         public string PrdName;
         public float ProductPrice;
          
         public string ImageUrl;
+
+        //public int PrdID { get => prdID; set => prdID = value; }
     }
 }

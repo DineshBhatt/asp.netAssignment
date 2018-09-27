@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> - IJOX Application</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -45,7 +45,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <a class="navbar-brand" runat="server" href="~/About">IJOX_APP</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -59,26 +59,22 @@
                         <li><a runat="server" href="~/Contact">Orders</a></li>
                         <%}
                             %>--%>
+
+                          <li><a runat="server" href="~/About">Products</a></li>  
                             <% if (Context.User.IsInRole("User"))
-                             {%>
-                                   <li><a runat="server" href="~/">User</a></li>
-                              <%}
-                            else
-                            {
-                                if (Context.User.IsInRole("Products"))
                                 {%>
-                                       <li><a runat="server" href="~/About">Product</a></li>                                      
-                                    <%}
-                                    else
-                                    {
-                                        if (Context.User.IsInRole("Order"))
-                                        {%> 
-                                               <li><a runat="server" href="~/Contact">Order</a></li>
-                                         <%}
-                                            else
-                                           {%> <%}%>
-                                     <%}
-                            }%>
+                                   <li><a runat="server" href="~/About">User</a></li>
+                            
+                                                                         
+                             <%}
+                               else
+                                {
+                                            if (Context.User.IsInRole("Management"))
+                                            {%> 
+                                               <li><a runat="server" href="~/Contact">Product Management</a></li>
+                                            <%
+                                            }
+                               } %>
 
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
